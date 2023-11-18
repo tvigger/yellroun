@@ -1,5 +1,5 @@
 import sys
-from PyQt5.QtWidgets import QMainWindow, QPushButton, QApplication
+from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5.QtGui import QPainter, QColor
 from PyQt5 import uic
 from random import randint
@@ -31,7 +31,7 @@ class YellowCircle(QMainWindow):
     def circle(self, qp):
         qp.setBrush(QColor(255, 255, 0))
         x, y = randint(0, 450), randint(0, 430)
-        d = (randint(10, min(500 - x,480 - y)))
+        d = (randint(10, min(500 - x, 480 - y)))
         qp.drawEllipse(x, y, d, d)
 
 
